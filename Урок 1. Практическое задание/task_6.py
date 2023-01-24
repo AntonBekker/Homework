@@ -19,3 +19,19 @@
 6-й день: 3,22
 Ответ: на 6-й день спортсмен достиг результата — не менее 3 км.
 """
+daynum = 1
+print("Введите количество километров в первый день пробежки:")
+whileday = int(input())
+print("Введите целевое количество километров:")
+target = int(input())
+print(f'{daynum}-й день: {whileday} ')
+
+while whileday < target:
+    whileday *= 1.1
+    daynum += 1
+    print(f'{daynum}-й день: {whileday} ')
+else:
+    print(f'{daynum}-й день: {whileday} ')
+
+print(f'Ответ: на {daynum}-й день спортсмен достиг результата — не менее {target} км.')
+
