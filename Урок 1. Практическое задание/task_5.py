@@ -19,16 +19,3 @@
 Прибыль фирмы в расчете на одного сотрудника = 50.0
 """
 
-print("Введите выручку фирмы:")
-revenue = int(input())
-print("Введите издержки фирмы:")
-costs = int(input())
-if revenue > costs:
-    print(f'Финансовый результат - прибыль. Ее величина:{revenue-costs}')
-    print("Введите численность сотрудников фирмы:")
-    employee = int(input())
-    print(f'Прибыль фирмы в расчете на одного сотрудника {(revenue-costs)/employee}')
-else:
-    print(f'Финансовый результат - убыток. Его величина:{costs-revenue}')
-
-
